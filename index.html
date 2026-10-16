@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Остап Гребенюк — гірський гід у Карпатах: маршрути, розклад походів, контакти.">
+<title>Остап Гребенюк — гірський гід, Карпати</title>
+<style>
+:root{--bg:#f6f4ee;--card:#fff;--text:#1d2a24;--muted:#55645c;--accent:#1f6b4a;--accent-t:#fff;--line:#d9d5c8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121a16;--card:#1b2620;--text:#e8efe9;--muted:#a3b3a9;--accent:#5fc593;--accent-t:#0d1a13;--line:#2e3c34;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121a16;--card:#1b2620;--text:#e8efe9;--muted:#a3b3a9;--accent:#5fc593;--accent-t:#0d1a13;--line:#2e3c34;color-scheme:dark}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--card);border-bottom:1px solid var(--line);z-index:5}
+nav .wrap{display:flex;gap:4px;align-items:center;overflow-x:auto}
+nav a{padding:14px 12px;text-decoration:none;color:var(--text);white-space:nowrap;font-size:15px}
+nav a:hover,nav a:focus-visible{color:var(--accent)}
+nav button{margin-left:auto;background:none;border:1px solid var(--line);color:var(--text);border-radius:6px;padding:6px 10px;cursor:pointer;font:inherit;font-size:14px}
+header{padding:40px 0 24px}
+header .wrap{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.avatar{width:120px;height:120px;border-radius:50%;background:var(--accent);color:var(--accent-t);display:grid;place-items:center;font-size:56px;flex:none}
+h1{margin:0;font-size:2rem;line-height:1.2}
+.role{color:var(--muted);margin:4px 0 12px}
+.quick{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-t);padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600;border:0;font:inherit;font-weight:600;cursor:pointer}
+.btn.alt{background:none;color:var(--accent);border:1px solid var(--accent)}
+section{padding:28px 0;border-top:1px solid var(--line)}
+h2{margin:0 0 14px;font-size:1.4rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+.card h3{margin:0 0 6px;font-size:1.05rem}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.tag{display:inline-block;font-size:13px;border:1px solid var(--line);border-radius:99px;padding:1px 10px;margin-top:8px}
+ul{padding-left:20px;margin:0}
+.news li{margin-bottom:8px;list-style:none;margin-left:-20px}
+time{font-weight:600;margin-right:8px}
+form{display:grid;gap:12px;max-width:520px}
+label{display:grid;gap:4px;font-size:15px}
+input,textarea{font:inherit;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--text)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+footer{padding:24px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:520px){h1{font-size:1.6rem}.avatar{width:90px;height:90px;font-size:42px}}
+</style>
+</head>
+<body>
+<nav aria-label="Головне меню"><div class="wrap">
+<a href="#about" data-en="About">Про мене</a>
+<a href="#tours" data-en="Tours">Походи</a>
+<a href="#experience" data-en="Experience">Досвід</a>
+<a href="#news" data-en="News">Новини</a>
+<a href="#contact" data-en="Contact">Контакти</a>
+<button id="lang" type="button" aria-label="Змінити мову / Change language">EN</button>
+</div></nav>
+
+<header><div class="wrap">
+<div class="avatar" role="img" aria-label="Фото гіда (умовне)">⛰️</div>
+<div>
+<h1 data-en="Ostap Hrebeniuk">Остап Гребенюк</h1>
+<p class="role" data-en="Certified mountain guide · Ukrainian Carpathians">Сертифікований гірський гід · Українські Карпати</p>
+<div class="quick">
+<a class="btn" href="#contact" data-en="Book a hike">Записатися в похід</a>
+<a class="btn alt" href="#tours" data-en="See routes">Дивитися маршрути</a>
+</div></div></div></header>
+
+<main class="wrap">
+<section id="about">
+<h2 data-en="About me">Про мене</h2>
+<p data-en="I have led groups in the Chornohora and Svydovets ranges for 12 years. I help beginners take their first mountain steps safely and give experienced hikers new routes. My priorities are safety, respect for nature and good company.">Вже 12 років веду групи в Чорногорі та на Свидовці. Допомагаю новачкам безпечно зробити перші кроки в горах, а досвідченим мандрівникам пропоную нові маршрути. Мої пріоритети — безпека, повага до природи та приємна компанія.</p>
+</section>
+
+<section id="tours">
+<h2 data-en="Tours">Походи</h2>
+<div class="grid">
+<article class="card"><h3 data-en="Hoverla for beginners">Говерла для початківців</h3><p data-en="1 day, 12 km, ascent 700 m. Group up to 8 people.">1 день, 12 км, набір висоти 700 м. Група до 8 осіб.</p><span class="tag" data-en="Easy">Легко</span></article>
+<article class="card"><h3 data-en="Chornohora ridge">Чорногірський хребет</h3><p data-en="3 days, 38 km, camping. Five peaks above 2,000 m.">3 дні, 38 км, ночівля в наметах. П'ять вершин вище 2000 м.</p><span class="tag" data-en="Medium">Середньо</span></article>
+<article class="card"><h3 data-en="Svydovets lakes">Озера Свидовця</h3><p data-en="2 days, 24 km. Lake Apshynets and the Blyznytsia ridge.">2 дні, 24 км. Озеро Апшинець і хребет Близниця.</p><span class="tag" data-en="Medium">Середньо</span></article>
+</div>
+</section>
+
+<section id="experience">
+<h2 data-en="Experience and certificates">Досвід і сертифікати</h2>
+<ul>
+<li data-en="Mountain guide certificate, 2014">Сертифікат гірського гіда, 2014</li>
+<li data-en="Wilderness first aid course, renewed 2025">Курс першої допомоги в горах, поновлено 2025</li>
+<li data-en="More than 300 group hikes, over 2,500 participants">Понад 300 групових походів, понад 2500 учасників</li>
+</ul>
+</section>
+
+<section id="news" class="news">
+<h2 data-en="News">Новини</h2>
+<ul>
+<li><time datetime="2026-10-10">10.10.2026</time><span data-en="Autumn season: weekend hikes continue until 1 November.">Осінній сезон: походи вихідного дня тривають до 1 листопада.</span></li>
+<li><time datetime="2026-09-20">20.09.2026</time><span data-en="Registration for the winter Chornohora ski tour is open.">Відкрито запис на зимовий лижний тур Чорногорою.</span></li>
+</ul>
+</section>
+
+<section id="contact">
+<h2 data-en="Contact">Контакти</h2>
+<p><span data-en="Email:">Пошта:</span> <a href="mailto:ostap@example.com">ostap@example.com</a> · <span data-en="Replies within 24 hours">відповідь протягом 24 годин</span></p>
+<form id="f">
+<label><span data-en="Your name">Ваше ім'я</span><input name="n" required autocomplete="name"></label>
+<label><span data-en="Your email">Ваша пошта</span><input name="e" type="email" required autocomplete="email"></label>
+<label><span data-en="Message">Повідомлення</span><textarea name="m" rows="4" required></textarea></label>
+<button class="btn" type="submit" data-en="Send">Надіслати</button>
+<p id="ok" role="status" hidden data-en="Thanks! This is a demo form, nothing was sent.">Дякую! Це демонстраційна форма, дані нікуди не надсилались.</p>
+</form>
+</section>
+</main>
+
+<footer><div class="wrap"><span data-en="Last updated:">Оновлено:</span> <time datetime="2026-10-16">16.10.2026</time> · <span data-en="Demo page with fictional data">Демонстраційна сторінка з вигаданими даними</span></div></footer>
+
+<script>
+(function(){
+var els=document.querySelectorAll('[data-en]'),en=false;
+els.forEach(function(e){e.setAttribute('data-uk',e.textContent)});
+document.getElementById('lang').addEventListener('click',function(){
+en=!en;document.documentElement.lang=en?'en':'uk';
+els.forEach(function(e){e.textContent=e.getAttribute(en?'data-en':'data-uk')});
+this.textContent=en?'UA':'EN';
+});
+document.getElementById('f').addEventListener('submit',function(ev){
+ev.preventDefault();document.getElementById('ok').hidden=false;this.reset();
+});
+})();
+</script>
+</body>
+</html>
